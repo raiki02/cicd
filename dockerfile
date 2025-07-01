@@ -21,4 +21,5 @@ EXPOSE 8080
 
 RUN chmod +x app
 
+
 CMD ["./app"]
