@@ -20,7 +20,7 @@ func initDB() {
 }
 
 func newApp() *gin.Engine {
-	initDB()
+	// initDB()
 	app := gin.New()
 	app.Use(gin.Recovery())
 	app.Use(gin.Logger())
