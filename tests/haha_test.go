@@ -9,7 +9,7 @@ func TestAdd(t *testing.T) {
 
 	a := 1
 	b := 2
-	want := 5
+	want := a + b
 
 	got := Add(a, b)
 	if got != want {
