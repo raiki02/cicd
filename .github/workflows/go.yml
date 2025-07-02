@@ -58,9 +58,9 @@ jobs:
   deploy:
     name: Deploy Be-answer To Server
     runs-on: ubuntu-latest
-#    needs:
+    needs:
 #      - test
-#      - build
+      - build
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
