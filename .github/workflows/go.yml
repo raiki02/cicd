@@ -50,7 +50,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: crpi-rz6bkoxraz68b1g1.cn-hongkong.personal.cr.aliyuncs.com/cicd/tes_tme:v1
+          tags: crpi-rz6bkoxraz68b1g1.cn-hongkong.personal.cr.aliyuncs.com/cicd:v1
           file: ./Dockerfile
           build-args:
             Project_Name=be-answer
@@ -76,7 +76,7 @@ jobs:
       - name: SSH into server and deploy
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_ADDR }} << EOF
-          docker pull crpi-rz6bkoxraz68b1g1.cn-hongkong.personal.cr.aliyuncs.com/cicd/tes_tme:v1
+          docker pull crpi-rz6bkoxraz68b1g1.cn-hongkong.personal.cr.aliyuncs.com/cicd:v1
           docker image prune -f
           docker compose up -d
           EOF
