@@ -1,0 +1,22 @@
+name: kstack:be-answer/lint
+on:
+  push:
+    branches:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  golangci:
+    name: lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.24.2'
+      - name: Golang CI Lint
+        uses: golangci/golangci-lint-action@v8
+        with:
+          version: v2.1
