@@ -80,3 +80,4 @@ jobs:
           docker image prune -f
           docker-compose up -d
           EOF
+
