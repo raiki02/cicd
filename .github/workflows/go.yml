@@ -55,7 +55,6 @@ jobs:
           build-args:
             Project_Name=be-answer
             Port=19094
-
   deploy:
     name: Deploy Be-answer To Server
     runs-on: ubuntu-latest
