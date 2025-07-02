@@ -1,4 +1,4 @@
-name: kstack:be-answer/lint
+name: test:cicd/lint
 on:
   push:
     branches:

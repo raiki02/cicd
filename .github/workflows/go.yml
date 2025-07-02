@@ -1,4 +1,4 @@
-name: kstack:be-answer/build
+name: test:cicd/build
 
 on: [push, pull_request]
 
